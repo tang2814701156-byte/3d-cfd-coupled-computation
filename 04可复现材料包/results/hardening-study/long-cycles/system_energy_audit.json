@@ -1,0 +1,31 @@
+{
+  "mechanical": {
+    "storage_j": -1.4550913403303546e-05,
+    "supply_pressure_work_j": 9.629355689178001e-05,
+    "external_net_kinetic_flux_j": 3.9540700065095376e-07,
+    "outlet_pressure_work_j": 0.0,
+    "viscous_boundary_work_j": -2.4517974285271086e-09,
+    "dissipation_export_j": 0.00010920223714313896,
+    "local_discretization_residual_j": -5.556455349507842e-07,
+    "interface_pressure_work_defect_j": 1.387697296063723e-07,
+    "interface_kinetic_flux_defect_j": 5.4995908930796e-07,
+    "external_balance_residual_j": -1.244374353865117e-06,
+    "decomposition_identity_error_j": -4.235164736271502e-22,
+    "relative_to_supply_work": 0.012922716680448447,
+    "discrete_profile_external_residual_j": -7.288174582853757e-07,
+    "discrete_profile_relative_to_supply_work": 0.007568704301830503
+  },
+  "thermal": {
+    "storage_j": 45.358577858608335,
+    "supply_heat_j": 150.45868264340626,
+    "outlet_heat_j": 105.1357866287718,
+    "source_j": 0.0,
+    "interface_heat_defect_j": -0.03568189897112006,
+    "local_discretization_residual_j": -5.4997241916089797e-08,
+    "external_balance_residual_j": 0.03568184397386176,
+    "decomposition_identity_error_j": -1.6389667401028873e-14,
+    "relative_to_supply_heat": 0.0002371537710351307
+  },
+  "total_external_residual_j": 0.035680599599507895,
+  "scope": "diagnostic assembly of hydraulic inertia + separate mixing volume + CFD; viscous losses exported to thermostat, not deposited into T; gradient-reconstructed CFD stress retains numerical defect; no full physical closure claim"
+}

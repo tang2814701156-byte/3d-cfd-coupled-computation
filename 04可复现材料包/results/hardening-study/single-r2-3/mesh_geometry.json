@@ -1,0 +1,10 @@
+{
+  "original_inlet_area_m2": 7.764571501427224e-05,
+  "target_inlet_area_m2": 7.853981633974483e-05,
+  "corrected_inlet_area_m2": 7.853981633974483e-05,
+  "radial_scale": 1.0057410902420327,
+  "parabolic_profile_scale": 0.991211296346904,
+  "discrete_beta": 1.318005786118709,
+  "discrete_gamma": 1.9515337506785277,
+  "scope": "uniform x/y scaling of the extruded polygonal mesh; radius is area-equivalent"
+}

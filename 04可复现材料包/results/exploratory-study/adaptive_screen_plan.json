@@ -1,0 +1,109 @@
+{
+  "reason": "Both original screens exceed the 0.1% pressure trajectory gate",
+  "rejected_original_screens": {
+    "valve-relax05": {
+      "velocity_m_s": {
+        "max_abs": 1.2958463176393487e-06,
+        "normalized_max": 6.27771013475022e-05,
+        "normalized_rms": 3.360330852485891e-05
+      },
+      "back_pressure_pa": {
+        "max_abs": 0.06571947137912737,
+        "normalized_max": 0.0038349383654866205,
+        "normalized_rms": 0.00021988713295264826
+      },
+      "temperature_k": {
+        "max_abs": 2.783527185101775e-05,
+        "normalized_max": 2.1053620398554214e-06,
+        "normalized_rms": 7.516266754215766e-07
+      },
+      "phase_fraction": {
+        "max_abs": 8.350581599536611e-07,
+        "normalized_max": 2.1053620510070294e-06,
+        "normalized_rms": 7.516266765477358e-07
+      }
+    },
+    "valve-relax08": {
+      "velocity_m_s": {
+        "max_abs": 1.327514001836505e-06,
+        "normalized_max": 6.431123806821082e-05,
+        "normalized_rms": 3.437346689728778e-05
+      },
+      "back_pressure_pa": {
+        "max_abs": 0.0657198756598465,
+        "normalized_max": 0.0038349619565412603,
+        "normalized_rms": 0.0002202417942640513
+      },
+      "temperature_k": {
+        "max_abs": 3.100447094084302e-05,
+        "normalized_max": 2.3450691099416976e-06,
+        "normalized_rms": 8.930187906566048e-07
+      },
+      "phase_fraction": {
+        "max_abs": 9.30134140597616e-07,
+        "normalized_max": 2.3450691411349425e-06,
+        "normalized_rms": 8.930187922429871e-07
+      }
+    }
+  },
+  "candidate": "valve-relax05-tight",
+  "case": {
+    "name": "valve-transport",
+    "pipe": {
+      "rho": 1000.0,
+      "nu": 1e-05,
+      "radius": 0.005,
+      "length": 0.02,
+      "supply_pressure": 12.8,
+      "velocity": 0.1,
+      "valve_resistance": 64.0
+    },
+    "cfd": {
+      "length": 0.02,
+      "radial_cells_per_block": 6,
+      "axial_cells": 40,
+      "normalize_interface_area": true
+    },
+    "coupling": {
+      "end_time_s": 0.12,
+      "window_s": 0.001,
+      "dt_1d_s": 0.00025,
+      "dt_3d_s": 0.000125,
+      "relative_tolerance": 1e-05,
+      "max_iterations": 60,
+      "initial_relaxation": 0.5
+    },
+    "control": {
+      "period_s": 0.001,
+      "events": [
+        {
+          "time_s": 0.05,
+          "opening": 0.4
+        },
+        {
+          "time_s": 0.08,
+          "opening": 1.0
+        }
+      ]
+    },
+    "interface": {
+      "temperature_k": 300.0,
+      "phase": "equal_property_two_phase"
+    },
+    "transport": {
+      "volume_m3": 7.853981633974484e-07,
+      "temperature_k": 300.0,
+      "alpha": 0.2,
+      "supply_temperature_k": 320.0,
+      "supply_alpha": 0.8,
+      "cp_j_kg_k": 1000.0,
+      "reference_temperature_k": 300.0
+    },
+    "scalar_cfd": {
+      "manufactured": false,
+      "thermal_diffusivity_m2_s": 0.0,
+      "phase_diffusivity_m2_s": 0.0
+    }
+  },
+  "acceptance": "unchanged four-state maximum difference <0.1% of reference signal range and less trial work than default"
+}

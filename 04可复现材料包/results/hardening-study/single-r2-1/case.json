@@ -1,0 +1,58 @@
+{
+  "name": "single-r2-1",
+  "pipe": {
+    "rho": 1000.0,
+    "nu": 1e-05,
+    "radius": 0.005,
+    "length": 0.02,
+    "supply_pressure": 12.8,
+    "velocity": 0.1,
+    "valve_resistance": 64.0
+  },
+  "cfd": {
+    "length": 0.02,
+    "radial_cells_per_block": 6,
+    "axial_cells": 40,
+    "normalize_interface_area": true
+  },
+  "coupling": {
+    "end_time_s": 0.12,
+    "window_s": 0.000125,
+    "dt_1d_s": 0.000125,
+    "dt_3d_s": 0.000125,
+    "relative_tolerance": 0.0001,
+    "max_iterations": 60,
+    "initial_relaxation": 0.2
+  },
+  "control": {
+    "period_s": 0.001,
+    "events": [
+      {
+        "time_s": 0.05,
+        "opening": 0.4
+      },
+      {
+        "time_s": 0.08,
+        "opening": 1.0
+      }
+    ]
+  },
+  "interface": {
+    "temperature_k": 300.0,
+    "phase": "equal_property_two_phase"
+  },
+  "transport": {
+    "volume_m3": 7.853981633974484e-07,
+    "temperature_k": 300.0,
+    "alpha": 0.2,
+    "supply_temperature_k": 320.0,
+    "supply_alpha": 0.8,
+    "cp_j_kg_k": 1000.0,
+    "reference_temperature_k": 300.0
+  },
+  "scalar_cfd": {
+    "manufactured": false,
+    "thermal_diffusivity_m2_s": 0.0,
+    "phase_diffusivity_m2_s": 0.0
+  }
+}

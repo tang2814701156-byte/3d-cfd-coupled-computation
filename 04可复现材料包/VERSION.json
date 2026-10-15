@@ -1,0 +1,14 @@
+{
+  "release": "v1.0",
+  "image_id": "sha256:b1d232e917fcc6bdea07c544bb41b81030538ae18a552f6dac241e938c4cd662",
+  "source_history": "Git base snapshot plus working-tree updates recorded in FILE_SHA256.json; per-run source manifests retain executed sources",
+  "upstream_versions": "environment/solver-environment.json and third_party/manifest.json",
+  "working_tree_update": {
+    "date": "2026-10-14",
+    "description": "Single-terminal live monitoring for Windows case and study entry points",
+    "files": [
+      "run.ps1",
+      "scripts/run_video.ps1"
+    ]
+  }
+}

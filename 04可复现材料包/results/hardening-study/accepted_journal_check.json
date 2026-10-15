@@ -1,0 +1,68 @@
+[
+  {
+    "name": "single-r2-1",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "single-r5-1",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "single-r5-2",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "single-r2-2",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "single-r2-3",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "single-r5-3",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "long-cycles",
+    "accepted_windows": 2000,
+    "accepted_rows": 2000,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "advection-combined",
+    "accepted_windows": 24,
+    "accepted_rows": 480,
+    "csv_max_difference": 0.0
+  },
+  {
+    "name": "kill-pipe",
+    "accepted_windows": 20,
+    "accepted_rows": 20,
+    "csv_max_difference": null
+  },
+  {
+    "name": "kill-foam",
+    "accepted_windows": 20,
+    "accepted_rows": 20,
+    "csv_max_difference": null
+  },
+  {
+    "name": "recovery",
+    "accepted_windows": 960,
+    "accepted_rows": 960,
+    "csv_max_difference": 0.0
+  }
+]

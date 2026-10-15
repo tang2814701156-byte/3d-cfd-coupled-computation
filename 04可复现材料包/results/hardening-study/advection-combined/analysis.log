@@ -1,0 +1,180 @@
+{
+  "case": "advection-combined",
+  "physical_end_s": 0.12000000000000009,
+  "wall_seconds": 175.85898009999983,
+  "window_s": 0.005,
+  "accepted_windows": 24,
+  "accepted_1d_substeps": 480,
+  "write_attempts_including_rollbacks": 820,
+  "latency": {
+    "1d_to_3d": {
+      "samples": 41,
+      "p50_ms": 3.001109,
+      "p95_ms": 4.156889,
+      "p99_ms": 6.320975000000002,
+      "max_ms": 6.674125
+    },
+    "3d_to_1d": {
+      "samples": 41,
+      "p50_ms": 12.647896,
+      "p95_ms": 21.630189,
+      "p99_ms": 118.73208660000023,
+      "max_ms": 182.123671
+    },
+    "scope": "first receiver use per observed source sample; includes implicit trial iterations and stamp I/O; same-container CLOCK_MONOTONIC"
+  },
+  "control_events": 0,
+  "max_control_error_s": 0.0,
+  "mass_mapping": {
+    "samples_including_trials": 1641,
+    "max_abs_volume_flow_residual_m3_s": 2.879912020664621e-20,
+    "scope": "instantaneous discrete inlet profile normalization; not a full window or system mass/energy ledger"
+  },
+  "final_velocity_m_s": 0.09986316722532483,
+  "steady_poiseuille_reference": {
+    "velocity_m_s": 0.1,
+    "relative_final_velocity_error": 0.0013683277467517463,
+    "interface_pressure_pa": 6.4,
+    "relative_final_pressure_error": 0.003513598620932118,
+    "applicable": true
+  },
+  "physics_scope": "incompressible equal-property homogeneous two-phase scalar transport; sensible thermal energy",
+  "participant_timing_seconds": {
+    "read_pressure_s": 0.022479201000919602,
+    "model_and_control_s": 0.027965442004983743,
+    "write_and_stamp_s": 0.27695011900300415,
+    "advance_wait_s": 164.209085710998,
+    "finalize_s": 0.0008126760001232469
+  },
+  "participant_timing_scope": "all trials; advance includes remote CFD solve and synchronization, not isolated network overhead; excludes initialization",
+  "trial_work_amplification": 1.7083333333333333,
+  "wall_seconds_per_physical_second": 1465.4915008333307,
+  "transport": {
+    "manufactured_solution": false,
+    "accepted_cfd_steps": 960,
+    "trial_cfd_steps": 1640,
+    "analytic_advection": true,
+    "discrete_profile_geometry": {
+      "original_inlet_area_m2": 7.80361302577639e-05,
+      "target_inlet_area_m2": 7.853981633974483e-05,
+      "corrected_inlet_area_m2": 7.853981633974481e-05,
+      "radial_scale": 1.0032220711694722,
+      "parabolic_profile_scale": 0.9950862746704333,
+      "discrete_beta": 1.324750385062076,
+      "discrete_gamma": 1.973064118473338,
+      "scope": "uniform x/y scaling of the extruded polygonal mesh; radius is area-equivalent"
+    },
+    "interface": {
+      "temperature_k": {
+        "rms": 3.880023123984724e-13,
+        "max_abs": 1.3642420526593924e-12
+      },
+      "phase_fraction": {
+        "rms": 5.638735491761509e-16,
+        "max_abs": 2.886579864025407e-15
+      }
+    },
+    "interface_window_integrals": {
+      "mass": {
+        "cumulative_residual": 6.71497198238846e-10,
+        "relative_cumulative_residual": 7.131003783355659e-07,
+        "max_abs_window_residual": 1.2150615810811033e-10,
+        "sum_abs_window_residual": 6.71497198238846e-10,
+        "relative_l1_window_residual": 7.131003783355659e-07
+      },
+      "thermal": {
+        "cumulative_residual": -0.006842324952200513,
+        "relative_cumulative_residual": 0.0008703813436653708,
+        "max_abs_window_residual": 0.0004782112805056492,
+        "sum_abs_window_residual": 0.006842324952200513,
+        "relative_l1_window_residual": 0.0008703813436653708
+      },
+      "phase": {
+        "cumulative_residual": -2.0513544913495956e-07,
+        "relative_cumulative_residual": 0.00048361542124104173,
+        "max_abs_window_residual": 1.432203718734274e-08,
+        "sum_abs_window_residual": 2.0513544913495956e-07,
+        "relative_l1_window_residual": 0.00048361542124104173
+      },
+      "momentum": {
+        "cumulative_residual": 8.07696311793391e-07,
+        "relative_cumulative_residual": 0.006438628484915417,
+        "max_abs_window_residual": 3.372689650817947e-08,
+        "sum_abs_window_residual": 8.07696311793391e-07,
+        "relative_l1_window_residual": 0.006438628484915417
+      },
+      "pressure_force": {
+        "cumulative_residual": -3.5027273218702872e-09,
+        "relative_cumulative_residual": 5.7814198884342926e-05,
+        "max_abs_window_residual": 3.1683453247660637e-09,
+        "sum_abs_window_residual": 5.14118040539256e-09,
+        "relative_l1_window_residual": 8.485765494841433e-05
+      },
+      "kinetic_flux": {
+        "cumulative_residual": 1.2662159389952852e-07,
+        "relative_cumulative_residual": 0.013470052031519195,
+        "max_abs_window_residual": 5.289983373490768e-09,
+        "sum_abs_window_residual": 1.2662159389952852e-07,
+        "relative_l1_window_residual": 0.013470052031519195
+      },
+      "pressure_work": {
+        "cumulative_residual": 1.5197386090407345e-08,
+        "relative_cumulative_residual": 0.002510582115788575,
+        "max_abs_window_residual": 6.526246795051151e-10,
+        "sum_abs_window_residual": 1.5197386090407345e-08,
+        "relative_l1_window_residual": 0.002510582115788575
+      },
+      "total_energy_flux": {
+        "cumulative_residual": -0.006842183133220808,
+        "relative_cumulative_residual": 0.0008703615925739173,
+        "max_abs_window_residual": 0.0004782055048082427,
+        "sum_abs_window_residual": 0.006842183133220808,
+        "relative_l1_window_residual": 0.0008703615925739173
+      },
+      "momentum_discrete": {
+        "cumulative_residual": 1.7779143816508744e-10,
+        "relative_cumulative_residual": 1.4264639220807055e-06,
+        "max_abs_window_residual": 3.2189039490139037e-11,
+        "sum_abs_window_residual": 1.7779143816508744e-10,
+        "relative_l1_window_residual": 1.4264639220807055e-06
+      },
+      "kinetic_discrete": {
+        "cumulative_residual": 1.9846407609241257e-11,
+        "relative_cumulative_residual": 2.1400908043492547e-06,
+        "max_abs_window_residual": 3.5951921438301997e-12,
+        "sum_abs_window_residual": 1.9846407609241257e-11,
+        "relative_l1_window_residual": 2.1400908043492547e-06
+      }
+    },
+    "max_cfd_thermal_residual_j": 7.314607079755842e-11,
+    "max_cfd_phase_residual_kg": 1.459239658362453e-20,
+    "cumulative_cfd_thermal_residual_j": -8.887427877002938e-10,
+    "cumulative_cfd_phase_residual_kg": -3.441704865172234e-18,
+    "cumulative_cfd_momentum_residual_kg_m_s": -1.9662801473870307e-10,
+    "cumulative_cfd_mechanical_residual_j": -4.4224919289035254e-08,
+    "cumulative_cfd_total_energy_residual_j": -4.511366207948431e-08,
+    "max_pipe_momentum_residual_kg_m_s": 1.0831516531075621e-20,
+    "max_pipe_mechanical_residual_j": 2.2565487110446595e-21,
+    "alpha_min": 0.19999999996402457,
+    "alpha_max": 0.6167853797077456,
+    "scope": "thermal sensible energy; equal-property phases; signed boundary flux includes diffusion; mechanical energy separate; CFD momentum uses reconstructed stress diagnostic",
+    "max_temperature_field_rms_k": 0.31188825668449077,
+    "max_alpha_field_rms": 0.00935664783260679,
+    "max_1d_temperature_k_error": 0.006285371483329527,
+    "max_1d_phase_fraction_error": 0.0001885611444961688,
+    "pressure_work_decomposition": {
+      "area_projected_3d_j": 6.0536775102733825e-06,
+      "actual_3d_j": 6.038134227655211e-06,
+      "temporal_and_trajectory_difference_j": -3.458965277638511e-10,
+      "spatial_pressure_flow_covariance_j": 1.5543282618171196e-08,
+      "total_difference_j": 1.5197386090407345e-08,
+      "normalization_j": 6.053331613745619e-06,
+      "signed_temporal_percent": -0.005714151310964125,
+      "signed_spatial_percent": 0.25677236288982164,
+      "signed_total_percent": 0.2510582115788575,
+      "closure_error_j": 0.0,
+      "scope": "signed additive diagnostic; actual face-product pressure work remains the conservation metric"
+    }
+  }
+}
+Verified advection-combined: 480 accepted substeps, 24 converged windows

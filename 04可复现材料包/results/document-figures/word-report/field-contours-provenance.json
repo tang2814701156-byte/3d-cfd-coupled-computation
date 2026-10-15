@@ -1,0 +1,173 @@
+{
+  "plane": "y = 0",
+  "view": "z increasing left to right from 20 to 40 mm",
+  "display": "cell to point interpolation after cell-centre error evaluation",
+  "cases": {
+    "verification/steady-fine": {
+      "time_s": 2.0,
+      "cell_count": 57600,
+      "cell_ranges": {
+        "U": {
+          "min": 0.0040162899531424046,
+          "max": 0.19905400276184082
+        },
+        "PressurePa": {
+          "min": 0.039759401232004166,
+          "max": 6.3986496925354
+        }
+      }
+    },
+    "verification/advection-fine": {
+      "time_s": 0.12,
+      "cell_count": 25600,
+      "cell_ranges": {
+        "U": {
+          "min": 0.005989629775285721,
+          "max": 0.1982869952917099
+        },
+        "PressurePa": {
+          "min": 0.03954790160059929,
+          "max": 6.443550109863281
+        },
+        "T": {
+          "min": 300.0,
+          "max": 313.89300537109375
+        },
+        "alpha": {
+          "min": 0.20000000298023224,
+          "max": 0.616786003112793
+        },
+        "TemperatureAbsError": {
+          "min": 0.0,
+          "max": 2.511993408203125
+        }
+      }
+    },
+    "verification/valve-0.001": {
+      "time_s": 0.12,
+      "cell_count": 7200,
+      "cell_ranges": {
+        "U": {
+          "min": 0.0061224899254739285,
+          "max": 0.17084799706935883
+        },
+        "PressurePa": {
+          "min": 0.07466600090265274,
+          "max": 6.4822797775268555
+        },
+        "T": {
+          "min": 300.0,
+          "max": 313.09600830078125
+        },
+        "alpha": {
+          "min": 0.20000000298023224,
+          "max": 0.5928789973258972
+        }
+      }
+    },
+    "verification/advection": {
+      "time_s": 0.12,
+      "cell_count": 7200,
+      "cell_ranges": {
+        "U": {
+          "min": 0.0079049002379179,
+          "max": 0.19694000482559204
+        },
+        "PressurePa": {
+          "min": 0.07869730144739151,
+          "max": 6.411570072174072
+        },
+        "T": {
+          "min": 300.0,
+          "max": 313.8080139160156
+        },
+        "alpha": {
+          "min": 0.20000000298023224,
+          "max": 0.6142339706420898
+        },
+        "TemperatureAbsError": {
+          "min": 0.0,
+          "max": 2.780082772438334
+        }
+      }
+    },
+    "exploratory-study/advection-time-quarter": {
+      "time_s": 0.12,
+      "cell_count": 7200,
+      "cell_ranges": {
+        "U": {
+          "min": 0.007904239930212498,
+          "max": 0.1969349980354309
+        },
+        "PressurePa": {
+          "min": 0.07868120074272156,
+          "max": 6.410620212554932
+        },
+        "T": {
+          "min": 300.0,
+          "max": 313.8080139160156
+        },
+        "alpha": {
+          "min": 0.20000000298023224,
+          "max": 0.614234983921051
+        },
+        "TemperatureAbsError": {
+          "min": 0.0,
+          "max": 2.782066415016459
+        }
+      }
+    },
+    "exploratory-study/advection-space-fine": {
+      "time_s": 0.12,
+      "cell_count": 25600,
+      "cell_ranges": {
+        "U": {
+          "min": 0.005989749915897846,
+          "max": 0.19828900694847107
+        },
+        "PressurePa": {
+          "min": 0.03955429792404175,
+          "max": 6.4430999755859375
+        },
+        "T": {
+          "min": 300.0,
+          "max": 313.89300537109375
+        },
+        "alpha": {
+          "min": 0.20000000298023224,
+          "max": 0.6167849898338318
+        },
+        "TemperatureAbsError": {
+          "min": 0.0,
+          "max": 2.52301025390625
+        }
+      }
+    },
+    "hardening-study/advection-combined": {
+      "time_s": 0.12,
+      "cell_count": 25600,
+      "cell_ranges": {
+        "U": {
+          "min": 0.005989530123770237,
+          "max": 0.1982869952917099
+        },
+        "PressurePa": {
+          "min": 0.03954409807920456,
+          "max": 6.444009780883789
+        },
+        "T": {
+          "min": 300.0,
+          "max": 313.89300537109375
+        },
+        "alpha": {
+          "min": 0.20000000298023224,
+          "max": 0.6167849898338318
+        },
+        "TemperatureAbsError": {
+          "min": 0.0,
+          "max": 2.506988525390625
+        }
+      }
+    }
+  }
+}

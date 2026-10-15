@@ -1,0 +1,17 @@
+{
+  "accepted_windows": 960,
+  "accepted_substeps": 960,
+  "write_attempts": 2043,
+  "physical_end_s": 0.12000000000000002,
+  "wall_seconds": 55.528834341,
+  "temperature_phase_mode": "equal_property_two_phase_transport",
+  "model": "uniform incompressible pipe inertia with quasi-steady Poiseuille friction",
+  "timing_seconds": {
+    "read_pressure_s": 0.160002263999786,
+    "model_and_control_s": 0.1169640320099461,
+    "write_and_stamp_s": 0.5592489829973601,
+    "advance_wait_s": 52.305527894996885,
+    "finalize_s": 0.0006304650000856782
+  },
+  "timing_scope": "all trials; advance includes remote CFD solve and synchronization, not isolated network overhead; excludes initialization"
+}

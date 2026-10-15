@@ -1,0 +1,23 @@
+test_back_pressure_changes_flow (test_model.ModelTests.test_back_pressure_changes_flow) ... ok
+test_control_clock_is_enforced (test_model.ModelTests.test_control_clock_is_enforced) ... ok
+test_event_truncates_step_and_replays_after_rollback (test_model.ModelTests.test_event_truncates_step_and_replays_after_rollback) ... ok
+test_nonfinite_boundary_rejected (test_model.ModelTests.test_nonfinite_boundary_rejected) ... ok
+test_nonmatching_substeps_preserve_solution_and_integral (test_model.ModelTests.test_nonmatching_substeps_preserve_solution_and_integral) ... ok
+test_steady_solution (test_model.ModelTests.test_steady_solution) ... ok
+test_valve_reduces_flow (test_model.ModelTests.test_valve_reduces_flow) ... ok
+test_invalid_fraction_and_reverse_flow (test_transport.TransportTests.test_invalid_fraction_and_reverse_flow) ... ok
+test_pipe_impulse_and_mechanical_energy (test_transport.TransportTests.test_pipe_impulse_and_mechanical_energy) ... ok
+test_trial_rewind_discards_suffix (test_transport.TransportTests.test_trial_rewind_discards_suffix) ... ok
+test_variable_flow_analytic_and_balances (test_transport.TransportTests.test_variable_flow_analytic_and_balances) ... ok
+test_zero_flow_and_rollback (test_transport.TransportTests.test_zero_flow_and_rollback) ... ok
+test_advection_reference_rejects_incompatible_case (test_validation.ValidationTests.test_advection_reference_rejects_incompatible_case) ... ok
+test_cubic_velocity_integral_against_quadrature (test_validation.ValidationTests.test_cubic_velocity_integral_against_quadrature) ... ok
+test_polygon_area_correction_is_idempotent (test_validation.ValidationTests.test_polygon_area_correction_is_idempotent) ... ok
+test_pressure_work_projection_separates_face_covariance (test_validation.ValidationTests.test_pressure_work_projection_separates_face_covariance) ... ok
+test_reject_nonfinite_physics (test_validation.ValidationTests.test_reject_nonfinite_physics) ... ok
+test_relaxation_configuration_and_invalid_values (test_validation.ValidationTests.test_relaxation_configuration_and_invalid_values) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.035s
+
+OK

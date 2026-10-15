@@ -1,0 +1,34 @@
+{
+  "name": "pipe-steady-water",
+  "pipe": {
+    "rho": 1000.0,
+    "nu": 1e-05,
+    "radius": 0.005,
+    "length": 0.02,
+    "supply_pressure": 12.8,
+    "velocity": 0.1,
+    "valve_resistance": 64.0
+  },
+  "cfd": {
+    "length": 0.02,
+    "radial_cells_per_block": 8,
+    "axial_cells": 40,
+    "normalize_interface_area": true
+  },
+  "coupling": {
+    "end_time_s": 2.0,
+    "window_s": 0.01,
+    "dt_1d_s": 0.002,
+    "dt_3d_s": 0.0025,
+    "relative_tolerance": 0.0001,
+    "max_iterations": 60
+  },
+  "control": {
+    "period_s": 0.001,
+    "events": []
+  },
+  "interface": {
+    "temperature_k": 300.0,
+    "phase": "single_liquid"
+  }
+}

@@ -1,0 +1,8 @@
+results/
+images/
+.git/
+.venv/
+delete/
+__pycache__/
+docs/
+SOURCE_HISTORY.bundle

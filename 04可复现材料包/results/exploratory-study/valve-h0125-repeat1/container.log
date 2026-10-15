@@ -1,0 +1,185 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _bd2b6720-20260127 OPENFOAM=2512 version=2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Oct 10 2026
+Time   : 16:36:19
+Host   : bc14948ef0e0
+PID    : 263
+I/O    : uncollated
+Case   : /tmp/cfd-v01-l_cht_st/case/fluid3d
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+
+Creating topology patches - from patches section
+
+Reading physicalType from existing boundary file
+
+Default patch type set to empty
+
+Creating block mesh topology - scaling/transform applied later
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 8
+		Number of boundary faces : 14
+		Number of defined boundary faces : 14
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale (0.001 0.001 0.001)
+    Block 0 cell size :
+        i : 0.00130526 .. 0.00130526
+        j : 0.000193127 .. 0.000965635
+        k : 0.0005 .. 0.0005
+
+    Block 1 cell size :
+        i : 0.00130526 .. 0.00130526
+        j : 0.000193127 .. 0.000965635
+        k : 0.0005 .. 0.0005
+
+    Block 2 cell size :
+        i : 0.00130526 .. 0.00130526
+        j : 0.000193127 .. 0.000965635
+        k : 0.0005 .. 0.0005
+
+    Block 3 cell size :
+        i : 0.00130526 .. 0.00130526
+        j : 0.000193127 .. 0.000965635
+        k : 0.0005 .. 0.0005
+
+    Block 4 cell size :
+        i : 0.000472528 .. 0.000472528
+        j : 0.000472528 .. 0.000472528
+        k : 0.0005 .. 0.0005
+
+Adding cell zones
+    0	pipe
+No patch pairs to merge
+
+Writing polyMesh with 1 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.005 -0.005 0.02) (0.005 0.005 0.04)
+  nPoints: 7913
+  nCells: 7200
+  nFaces: 22260
+  nInternalFaces: 20940
+----------------
+Cell Zones
+----------------
+  zone 0 (size: 7200) name: pipe
+----------------
+Patches
+----------------
+  patch 0 (start: 20940 size: 960) name: fixedWalls
+  patch 1 (start: 21900 size: 180) name: inlet
+  patch 2 (start: 22080 size: 180) name: outlet
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _bd2b6720-20260127 OPENFOAM=2512 version=2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -func writeCellCentres -time 0
+Date   : Oct 10 2026
+Time   : 16:36:19
+Host   : bc14948ef0e0
+PID    : 264
+I/O    : uncollated
+Case   : /tmp/cfd-v01-l_cht_st/case/fluid3d
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Time = 0
+
+Reading fields:
+
+Executing functionObjects
+writeCellCentres writeCellCentres write:
+    writing cell-centres field C to 0
+    Writing the x component field of the cell-centres Cx to 0
+    Writing the y component field of the cell-centres Cy to 0
+    Writing the z component field of the cell-centres Cz to 0
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _bd2b6720-20260127 OPENFOAM=2512 version=2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -latestTime -func sampleDict
+Date   : Oct 10 2026
+Time   : 16:36:55
+Host   : bc14948ef0e0
+PID    : 310
+I/O    : uncollated
+Case   : /tmp/cfd-v01-l_cht_st/case/fluid3d
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.12
+
+Sampled set:
+    centerline -> raw
+
+Time = 0.12
+
+Reading fields:
+    volScalarField: p
+
+Executing functionObjects
+
+End
+
+Both coupling participants completed successfully.

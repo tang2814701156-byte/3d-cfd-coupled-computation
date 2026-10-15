@@ -1,0 +1,107 @@
+[
+  {
+    "name": "advection-time-base",
+    "group": "time_refinement",
+    "verified": true,
+    "wall_seconds": 19.718459699999585,
+    "accepted_windows": 24
+  },
+  {
+    "name": "advection-time-half",
+    "group": "time_refinement",
+    "verified": true,
+    "wall_seconds": 20.054442500000732,
+    "accepted_windows": 24
+  },
+  {
+    "name": "advection-time-quarter",
+    "group": "time_refinement",
+    "verified": true,
+    "wall_seconds": 30.800962200000868,
+    "accepted_windows": 24
+  },
+  {
+    "name": "advection-space-fine",
+    "group": "space_refinement",
+    "verified": true,
+    "wall_seconds": 35.162900100000115,
+    "accepted_windows": 24
+  },
+  {
+    "name": "valve-h0125-repeat1",
+    "group": "period_repeats",
+    "verified": true,
+    "wall_seconds": 41.86897719999979,
+    "accepted_windows": 960
+  },
+  {
+    "name": "valve-h1-repeat1",
+    "group": "period_repeats",
+    "verified": true,
+    "wall_seconds": 45.199726900000314,
+    "accepted_windows": 120
+  },
+  {
+    "name": "valve-h1-repeat2",
+    "group": "period_repeats",
+    "verified": true,
+    "wall_seconds": 48.13314159999936,
+    "accepted_windows": 120
+  },
+  {
+    "name": "valve-h0125-repeat2",
+    "group": "period_repeats",
+    "verified": true,
+    "wall_seconds": 42.38731860000007,
+    "accepted_windows": 960
+  },
+  {
+    "name": "valve-h0125-repeat3",
+    "group": "period_repeats",
+    "verified": true,
+    "wall_seconds": 42.1385005000011,
+    "accepted_windows": 960
+  },
+  {
+    "name": "valve-h1-repeat3",
+    "group": "period_repeats",
+    "verified": true,
+    "wall_seconds": 47.64480860000003,
+    "accepted_windows": 120
+  },
+  {
+    "name": "valve-relax05",
+    "group": "relaxation",
+    "verified": true,
+    "wall_seconds": 35.52733050000097,
+    "accepted_windows": 120
+  },
+  {
+    "name": "valve-relax08",
+    "group": "relaxation",
+    "verified": true,
+    "wall_seconds": 35.92855190000046,
+    "accepted_windows": 120
+  },
+  {
+    "name": "valve-ratio8",
+    "group": "substep_ratio",
+    "verified": true,
+    "wall_seconds": 49.94205689999944,
+    "accepted_windows": 24
+  },
+  {
+    "name": "valve-short3125us",
+    "group": "short_period",
+    "verified": true,
+    "wall_seconds": 110.08508320000146,
+    "accepted_windows": 3840
+  },
+  {
+    "name": "valve-long",
+    "group": "extended_control",
+    "verified": true,
+    "wall_seconds": 126.59224119999999,
+    "accepted_windows": 360
+  }
+]

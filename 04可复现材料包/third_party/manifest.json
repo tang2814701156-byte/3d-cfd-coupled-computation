@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "file": "openfoam-adapter-0801887b958f.zip",
+      "bytes": 375797,
+      "sha256": "58f1d8ba6f7e8d931a80c70e0c6b0e2ae8212db068b6794c4e9063e60c31e09d",
+      "kind": "source",
+      "title": "precice/openfoam-adapter",
+      "source": "https://github.com/precice/openfoam-adapter",
+      "download_url": "https://codeload.github.com/precice/openfoam-adapter/zip/0801887b958f3101389cb719838dc8fc864d5369",
+      "commit": "0801887b958f3101389cb719838dc8fc864d5369",
+      "archive_entries": 126,
+      "license_files": [
+        "openfoam-adapter-0801887b958f3101389cb719838dc8fc864d5369/LICENSE"
+      ],
+      "license_excerpt": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n Everyone is permitted to copy and d",
+      "status": "downloaded"
+    },
+    {
+      "file": "tutorials-e31881130d79.zip",
+      "bytes": 21318562,
+      "sha256": "c3e3cd87d3678998d8455b15dce0d7b2ec0c69c003ebd66a479e774656a8c83c",
+      "kind": "source",
+      "title": "precice/tutorials",
+      "source": "https://github.com/precice/tutorials",
+      "download_url": "https://codeload.github.com/precice/tutorials/zip/e31881130d79a160fde1ad9f4da3324f8d310b63",
+      "commit": "e31881130d79a160fde1ad9f4da3324f8d310b63",
+      "archive_entries": 2362,
+      "license_files": [
+        "tutorials-e31881130d79a160fde1ad9f4da3324f8d310b63/LICENSE",
+        "tutorials-e31881130d79a160fde1ad9f4da3324f8d310b63/flow-around-controlled-moving-cylinder/controller-fmi/fmu/thirdparty/LICENSE.txt",
+        "tutorials-e31881130d79a160fde1ad9f4da3324f8d310b63/oscillator/solver-fmi/fmu/thirdparty/LICENSE.txt"
+      ],
+      "license_excerpt": "                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n Everyone is permitted to copy",
+      "status": "downloaded"
+    }
+  ]
+}

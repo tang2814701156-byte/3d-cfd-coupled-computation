@@ -1,0 +1,8 @@
+{
+  "release": "v1.0",
+  "image": "cfd-coupling:submission-v1",
+  "image_id": "sha256:b1d232e917fcc6bdea07c544bb41b81030538ae18a552f6dac241e938c4cd662",
+  "platform": "linux/amd64",
+  "archive": "../02可运行的双向耦合原型/images/cfd-coupling-submission.tar.gz",
+  "archive_sha256": "a8075b08911ad062fcaae914fae15bce2a484a9962cc172980200cf39b3b1e7f"
+}

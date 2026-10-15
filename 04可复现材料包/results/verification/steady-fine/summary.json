@@ -1,0 +1,52 @@
+{
+  "case": "pipe-steady-water",
+  "physical_end_s": 2.0000000000000013,
+  "wall_seconds": 204.65612069999997,
+  "window_s": 0.01,
+  "accepted_windows": 200,
+  "accepted_1d_substeps": 1000,
+  "write_attempts_including_rollbacks": 1230,
+  "latency": {
+    "1d_to_3d": {
+      "samples": 246,
+      "p50_ms": 1.4849535,
+      "p95_ms": 2.4209195,
+      "p99_ms": 3.073343650000001,
+      "max_ms": 4.970728
+    },
+    "3d_to_1d": {
+      "samples": 246,
+      "p50_ms": 17.868143,
+      "p95_ms": 35.56851125,
+      "p99_ms": 46.81017995000002,
+      "max_ms": 51.68575
+    },
+    "scope": "first receiver use per observed source sample; includes implicit trial iterations and stamp I/O; same-container CLOCK_MONOTONIC"
+  },
+  "control_events": 0,
+  "max_control_error_s": 0.0,
+  "mass_mapping": {
+    "samples_including_trials": 985,
+    "max_abs_volume_flow_residual_m3_s": 4.912791094074942e-20,
+    "scope": "instantaneous discrete inlet profile normalization; not a full window or system mass/energy ledger"
+  },
+  "final_velocity_m_s": 0.09984849902890817,
+  "steady_poiseuille_reference": {
+    "velocity_m_s": 0.1,
+    "relative_final_velocity_error": 0.001515009710918308,
+    "interface_pressure_pa": 6.4,
+    "relative_final_pressure_error": 0.0014820645880243843,
+    "applicable": true
+  },
+  "physics_scope": "single-phase isothermal incompressible; no water hammer, heat equation or phase transport",
+  "participant_timing_seconds": {
+    "read_pressure_s": 0.02759118899882651,
+    "model_and_control_s": 0.027549548001388757,
+    "write_and_stamp_s": 0.6769990519987914,
+    "advance_wait_s": 191.43072902100073,
+    "finalize_s": 0.0006998650000014095
+  },
+  "participant_timing_scope": "all trials; advance includes remote CFD solve and synchronization, not isolated network overhead; excludes initialization",
+  "trial_work_amplification": 1.23,
+  "wall_seconds_per_physical_second": 102.32806034999992
+}

@@ -1,0 +1,910 @@
+{
+  "date": "2026-10-11",
+  "execution": "sequential",
+  "script_sha256": "b7cc14de6b2c81ad6d35235c1b4ccc29899ffe23f6c2136b51c0d2f109d63ae0",
+  "comparisons": "time and space independently; three interleaved period repetitions; fixed grid for relaxation",
+  "acceptance": "existing verify_results gates; exploratory failures retained; elapsed time is not hardware realtime",
+  "specifications": [
+    {
+      "name": "advection-time-base",
+      "group": "time_refinement",
+      "case": {
+        "name": "transport-advection",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.005,
+          "dt_1d_s": 0.001,
+          "dt_3d_s": 0.0005,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": []
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "analytic_advection": true,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "advection-time-half",
+      "group": "time_refinement",
+      "case": {
+        "name": "transport-advection",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.005,
+          "dt_1d_s": 0.0005,
+          "dt_3d_s": 0.00025,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": []
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "analytic_advection": true,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "advection-time-quarter",
+      "group": "time_refinement",
+      "case": {
+        "name": "transport-advection",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.005,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": []
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "analytic_advection": true,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "advection-space-fine",
+      "group": "space_refinement",
+      "case": {
+        "name": "transport-advection",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 8,
+          "axial_cells": 80,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.005,
+          "dt_1d_s": 0.001,
+          "dt_3d_s": 0.0005,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": []
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "analytic_advection": true,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-h0125-repeat1",
+      "group": "period_repeats",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.000125,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-h1-repeat1",
+      "group": "period_repeats",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.001,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-h1-repeat2",
+      "group": "period_repeats",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.001,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-h0125-repeat2",
+      "group": "period_repeats",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.000125,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-h0125-repeat3",
+      "group": "period_repeats",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.000125,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-h1-repeat3",
+      "group": "period_repeats",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.001,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-relax05",
+      "group": "relaxation",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.001,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60,
+          "initial_relaxation": 0.5
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-relax08",
+      "group": "relaxation",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.001,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60,
+          "initial_relaxation": 0.8
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-ratio8",
+      "group": "substep_ratio",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 0.005,
+          "dt_1d_s": 0.001,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-short3125us",
+      "group": "short_period",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.12,
+          "window_s": 3.125e-05,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1.0
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    },
+    {
+      "name": "valve-long",
+      "group": "extended_control",
+      "case": {
+        "name": "valve-transport",
+        "pipe": {
+          "rho": 1000.0,
+          "nu": 1e-05,
+          "radius": 0.005,
+          "length": 0.02,
+          "supply_pressure": 12.8,
+          "velocity": 0.1,
+          "valve_resistance": 64.0
+        },
+        "cfd": {
+          "length": 0.02,
+          "radial_cells_per_block": 6,
+          "axial_cells": 40,
+          "normalize_interface_area": true
+        },
+        "coupling": {
+          "end_time_s": 0.36,
+          "window_s": 0.001,
+          "dt_1d_s": 0.00025,
+          "dt_3d_s": 0.000125,
+          "relative_tolerance": 0.0001,
+          "max_iterations": 60
+        },
+        "control": {
+          "period_s": 0.001,
+          "events": [
+            {
+              "time_s": 0.05,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.08,
+              "opening": 1
+            },
+            {
+              "time_s": 0.17,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.2,
+              "opening": 1
+            },
+            {
+              "time_s": 0.29,
+              "opening": 0.4
+            },
+            {
+              "time_s": 0.32,
+              "opening": 1
+            }
+          ]
+        },
+        "interface": {
+          "temperature_k": 300.0,
+          "phase": "equal_property_two_phase"
+        },
+        "transport": {
+          "volume_m3": 7.853981633974484e-07,
+          "temperature_k": 300.0,
+          "alpha": 0.2,
+          "supply_temperature_k": 320.0,
+          "supply_alpha": 0.8,
+          "cp_j_kg_k": 1000.0,
+          "reference_temperature_k": 300.0
+        },
+        "scalar_cfd": {
+          "manufactured": false,
+          "thermal_diffusivity_m2_s": 0.0,
+          "phase_diffusivity_m2_s": 0.0
+        }
+      }
+    }
+  ]
+}

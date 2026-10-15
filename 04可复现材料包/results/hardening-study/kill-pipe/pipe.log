@@ -1,0 +1,163 @@
+(0) 15:12:42 [impl::ParticipantImpl]:185 in configure: [0mThis is preCICE version 3.4.1
+(0) 15:12:42 [impl::ParticipantImpl]:186 in configure: [0mRevision info: no-info [git failed to run]
+(0) 15:12:42 [impl::ParticipantImpl]:205 in configure: [0mBuild type: Release (without debug log)
+(0) 15:12:42 [impl::ParticipantImpl]:207 in configure: [0mWorking directory "/tmp/cfd-v04-9gb3efgb/case"
+(0) 15:12:42 [impl::ParticipantImpl]:211 in configure: [0mConfiguring preCICE with configuration "/tmp/cfd-v04-9gb3efgb/case/precice-config.xml"
+(0) 15:12:42 [impl::ParticipantImpl]:212 in configure: [0mI am participant "Fluid1DLeft"
+(0) 15:12:42 [impl::ParticipantImpl]:335 in setupCommunication: [0mSetting up primary communication to coupling partner/s
+(0) 15:12:42 [impl::ParticipantImpl]:351 in setupCommunication: [0mPrimary ranks are connected
+(0) 15:12:42 [impl::ParticipantImpl]:357 in setupCommunication: [0mSetting up preliminary secondary communication to coupling partner/s
+(0) 15:12:42 [partition::ProvidedPartition]:120 in prepare: [0mPrepare partition for mesh Fluid1DLeft-Mesh
+(0) 15:12:42 [partition::ProvidedPartition]:87 in communicate: [0mGather mesh Fluid1DLeft-Mesh
+(0) 15:12:42 [partition::ProvidedPartition]:104 in communicate: [0mSend global mesh Fluid1DLeft-Mesh
+(0) 15:12:42 [partition::ReceivedPartition]:69 in communicate: [0mReceive global mesh Fluid3DRight-Mesh
+(0) 15:12:42 [partition::ProvidedPartition]:120 in prepare: [0mPrepare partition for mesh State1D
+(0) 15:12:42 [partition::ProvidedPartition]:87 in communicate: [0mGather mesh State1D
+(0) 15:12:42 [partition::ProvidedPartition]:104 in communicate: [0mSend global mesh State1D
+(0) 15:12:42 [impl::ParticipantImpl]:366 in setupCommunication: [0mSetting up secondary communication to coupling partner/s
+(0) 15:12:42 [impl::ParticipantImpl]:373 in setupCommunication: [0mSecondary ranks are connected
+(0) 15:12:42 [impl::ParticipantImpl]:1633 in computeMappings: [0mComputing "axial-geomultiscale" mapping from mesh "Fluid3DRight-Mesh" to mesh "Fluid1DLeft-Mesh" in "read" direction.
+(0) 15:12:42 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:42 [impl::ParticipantImpl]:298 in initialize: [0mit 1 (min: 1, max: 60), time-window 1, t 0 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:42 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:42 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 1, t 0 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 1, t 0 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 2, t 0.000125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00025 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 2, t 0.000125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00025 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 2, t 0.000125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00025 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 3, t 0.00025 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 3, t 0.00025 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 3, t 0.00025 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 4, t 0.000375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0005 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 4, t 0.000375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0005 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 4, t 0.000375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0005 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 5, t 0.0005 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000625 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 5, t 0.0005 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000625 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 5, t 0.0005 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000625 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 6, t 0.000625 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00075 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 6, t 0.000625 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00075 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 6, t 0.000625 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00075 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 7, t 0.00075 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000875 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 7, t 0.00075 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000875 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 7, t 0.00075 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.000875 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 8, t 0.000875 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 8, t 0.000875 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 8, t 0.000875 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 9, t 0.001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0011250000000000001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 9, t 0.001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:43 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0011250000000000001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:43 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 9, t 0.001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0011250000000000001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 10, t 0.0011250000000000001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 10, t 0.0011250000000000001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 10, t 0.0011250000000000001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 11, t 0.00125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 11, t 0.00125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 11, t 0.00125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 12, t 0.001375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0015 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 12, t 0.001375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0015 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 12, t 0.001375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0015 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 13, t 0.0015 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0016250000000000001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 13, t 0.0015 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0016250000000000001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 13, t 0.0015 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0016250000000000001 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 14, t 0.0016250000000000001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00175 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 14, t 0.0016250000000000001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00175 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 14, t 0.0016250000000000001 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.00175 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 15, t 0.00175 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001875 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 15, t 0.00175 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001875 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 15, t 0.00175 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.001875 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 16, t 0.001875 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 16, t 0.001875 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:44 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:44 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 16, t 0.001875 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 17, t 0.002 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 17, t 0.002 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 17, t 0.002 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002125 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 18, t 0.002125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0022500000000000003 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 18, t 0.002125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0022500000000000003 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 18, t 0.002125 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0022500000000000003 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 19, t 0.0022500000000000003 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 19, t 0.0022500000000000003 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 19, t 0.0022500000000000003 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002375 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 20, t 0.002375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0025 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 20, t 0.002375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0025 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 3 (min: 1, max: 60), time-window 20, t 0.002375 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [cplscheme::BaseCouplingScheme]:391 in secondExchange: [0mTime window completed
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.0025 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 1 (min: 1, max: 60), time-window 21, t 0.0025 (max: 0.12), Dt 0.000125, max-dt 0.000125
+(0) 15:12:45 [impl::DataContext]:155 in mapData: [0mMapping "Pressure" for t=0.002625 from "Fluid3DRight-Mesh" to "Fluid1DLeft-Mesh"
+(0) 15:12:45 [impl::ParticipantImpl]:457 in advance: [0mit 2 (min: 1, max: 60), time-window 21, t 0.0025 (max: 0.12), Dt 0.000125, max-dt 0.000125

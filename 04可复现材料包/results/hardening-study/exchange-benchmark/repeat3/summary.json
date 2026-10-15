@@ -1,0 +1,10 @@
+{
+  "round_trips": 1000,
+  "warmup_excluded": 20,
+  "median_exchange_s": 0.0005733405001819847,
+  "p95_exchange_s": 0.0018041120001157651,
+  "mean_exchange_s": 0.0008014128680001704,
+  "mean_local_baseline_s": 1.296380197224004e-06,
+  "mean_framework_increment_s": 0.0008001164878029464,
+  "scope": "one vertex, 5 forward + 1 reverse doubles; read/write/advance incl peer scheduling; excludes initialization/finalize; no CFD or production surface mapping"
+}

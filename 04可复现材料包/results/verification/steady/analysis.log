@@ -1,0 +1,53 @@
+{
+  "case": "pipe-steady-water",
+  "physical_end_s": 2.0000000000000013,
+  "wall_seconds": 35.18574440000009,
+  "window_s": 0.01,
+  "accepted_windows": 200,
+  "accepted_1d_substeps": 1000,
+  "write_attempts_including_rollbacks": 1180,
+  "latency": {
+    "1d_to_3d": {
+      "samples": 236,
+      "p50_ms": 0.6612625000000001,
+      "p95_ms": 1.11061125,
+      "p99_ms": 1.4000540000000004,
+      "max_ms": 1.905107
+    },
+    "3d_to_1d": {
+      "samples": 236,
+      "p50_ms": 0.6801045,
+      "p95_ms": 29.0857475,
+      "p99_ms": 42.44148320000002,
+      "max_ms": 211.677116
+    },
+    "scope": "first receiver use per observed source sample; includes implicit trial iterations and stamp I/O; same-container CLOCK_MONOTONIC"
+  },
+  "control_events": 0,
+  "max_control_error_s": 0.0,
+  "mass_mapping": {
+    "samples_including_trials": 945,
+    "max_abs_volume_flow_residual_m3_s": 2.879912020664621e-20,
+    "scope": "instantaneous discrete inlet profile normalization; not a full window or system mass/energy ledger"
+  },
+  "final_velocity_m_s": 0.09962729831359038,
+  "steady_poiseuille_reference": {
+    "velocity_m_s": 0.1,
+    "relative_final_velocity_error": 0.0037270168640962664,
+    "interface_pressure_pa": 6.4,
+    "relative_final_pressure_error": 0.003773962875631698,
+    "applicable": true
+  },
+  "physics_scope": "single-phase isothermal incompressible; no water hammer, heat equation or phase transport",
+  "participant_timing_seconds": {
+    "read_pressure_s": 0.0240551679987675,
+    "model_and_control_s": 0.026043830007438373,
+    "write_and_stamp_s": 0.17998376900084168,
+    "advance_wait_s": 25.286081204000766,
+    "finalize_s": 0.0004924479999317555
+  },
+  "participant_timing_scope": "all trials; advance includes remote CFD solve and synchronization, not isolated network overhead; excludes initialization",
+  "trial_work_amplification": 1.18,
+  "wall_seconds_per_physical_second": 17.592872200000034
+}
+Verified steady: 1000 accepted substeps, 200 converged windows

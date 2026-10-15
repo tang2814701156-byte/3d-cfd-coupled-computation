@@ -1,0 +1,74 @@
+[
+    {
+        "Id": "sha256:b1d232e917fcc6bdea07c544bb41b81030538ae18a552f6dac241e938c4cd662",
+        "RepoTags": [
+            "cfd-coupling:0.3"
+        ],
+        "RepoDigests": [
+            "cfd-coupling@sha256:b1d232e917fcc6bdea07c544bb41b81030538ae18a552f6dac241e938c4cd662"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-10T13:59:47.215911788Z",
+        "Config": {
+            "Env": [
+                "PATH=/opt/cfd/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "SSL_CERT_FILE=/opt/cfd-ca-bundle.pem",
+                "CURL_CA_BUNDLE=/opt/cfd-ca-bundle.pem",
+                "WM_NCOMPPROCS=4",
+                "LD_LIBRARY_PATH=/opt/cfd"
+            ],
+            "Entrypoint": [
+                "/opt/cfd/entrypoint.sh"
+            ],
+            "WorkingDir": "/work",
+            "Labels": {
+                "org.opencontainers.image.version": "24.04"
+            },
+            "Shell": [
+                "/bin/bash",
+                "-c"
+            ]
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 743356015,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d81fb2a7c6ee3be05fdefaa7fd223be219c1ab172083ec1b994c3ecda33ac0a8",
+                "sha256:bd2e2acb4997b496b6b78c01d9fb88b07deb1aafed223380b6b68378046dec2e",
+                "sha256:b9cf5c26c960ea7d0faf2a31f9d471b011e41120eb76718a0ab9eec016b1d9a4",
+                "sha256:b40ea7a5a5d366ea77488c5b3c3135e8565811439c8d08f7ea356310ff909f6d",
+                "sha256:b32f63428700fa362292a2ef4b93313c1f2e7424ccdc1b3469e0d3a029752bb6",
+                "sha256:6d26901a0a849305c72eaa5219fa97b3fdc9803a8a19bc34d9f97e620a5c8e86",
+                "sha256:3aee12855565e76d8fbd225a9ef5ac3b87782b93097813fcd5467129ab35afae",
+                "sha256:0502bce4e95747728c951af33a7cbb991fa7481b3e02d95615604b6a096d66ef",
+                "sha256:739c13ceb2867de56ca45128965ced1ce99e85a5970d2d25c13df7ea0250c443",
+                "sha256:66a26c7176cac787dd66fd148e9f92fe5ee90c69bc770406fba557c655f60ab9",
+                "sha256:b8bbc3bb31c7769e7f49f20cc99ac10f7332758cc05f74e9eb769ec19428d079",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:389a9be6153f865f757d117f68c78aebffd658fb5d44751431f4689cfd5a9820",
+                "sha256:3b8716829daae77957bc34c1949773de51d6c0eefcf087042ff6d72a04762492",
+                "sha256:a79964a78317424fafa40b99439c18844c60323e9731556a66419c80c0f070b4",
+                "sha256:289b9551b89915cbfd58747365c167a5ed1ad4a0ed5cf3eb688dc0b65ce22361"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-10T13:59:47.554632132Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:b1d232e917fcc6bdea07c544bb41b81030538ae18a552f6dac241e938c4cd662",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "ly0ccccscd1anogcxusw1bvxl",
+                    "CreatedAt": "2026-10-10T13:59:47.632932326Z"
+                }
+            ]
+        }
+    }
+]

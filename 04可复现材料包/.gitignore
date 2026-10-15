@@ -1,0 +1,9 @@
+results/
+images/
+.build/
+.venv/
+delete/
+__pycache__/
+*.py[cod]
+SOURCE_HISTORY.bundle
+FILE_SHA256.json

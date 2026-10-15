@@ -1,0 +1,7 @@
+{
+  "runs": 10,
+  "accepted_windows": 3508,
+  "shortest_tested_stable_window_s": 6.25e-05,
+  "frequency_reference": "valve-6.25e-05",
+  "scope": "single run per period; actual substeps also shorten when H is smaller than configured maxima"
+}

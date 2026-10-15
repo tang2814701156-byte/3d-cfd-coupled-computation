@@ -1,0 +1,26 @@
+{
+  "name": "valve-relax05-tight",
+  "work_amplification": 2.058333333333333,
+  "signal_errors": {
+    "velocity_m_s": {
+      "max_abs": 1.318551344220431e-06,
+      "normalized_max": 6.387704332007725e-05,
+      "normalized_rms": 3.360379773771118e-05
+    },
+    "back_pressure_pa": {
+      "max_abs": 0.0657171631091078,
+      "normalized_max": 0.003834803670653108,
+      "normalized_rms": 0.00021997802552966772
+    },
+    "temperature_k": {
+      "max_abs": 2.6438857730681775e-05,
+      "normalized_max": 1.999742188301287e-06,
+      "normalized_rms": 7.005363317808433e-07
+    },
+    "phase_fraction": {
+      "max_abs": 7.931657318716034e-07,
+      "normalized_max": 1.9997421881780745e-06,
+      "normalized_rms": 7.005363271184717e-07
+    }
+  }
+}

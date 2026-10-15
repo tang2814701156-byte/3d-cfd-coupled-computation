@@ -1,0 +1,5 @@
+{
+  "selected": null,
+  "additional_confirmation_runs": 0,
+  "reason": "All candidates exceed the unchanged maximum pressure trajectory difference gate; keep default relaxation"
+}

@@ -1,0 +1,18 @@
+FoamFile { version 2.0; format ascii; class dictionary; object couplingTransport; }
+thermalDiffusivity 0.0;
+phaseDiffusivity 0.0;
+inletPosition 0.02;
+rho 1000.0;
+cp 1000.0;
+referenceTemperature 300.0;
+manufactured true;
+analyticAdvection false;
+referenceRadius 0.005;
+referenceVelocity 0.1;
+tau 0.1;
+initialTemperature 300.0;
+supplyTemperature 320.0;
+initialAlpha 0.2;
+supplyAlpha 0.8;
+temperatureGradient 100.0;
+alphaGradient 1.0;

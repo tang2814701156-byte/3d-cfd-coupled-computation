@@ -1,0 +1,83 @@
+[
+  {
+    "name": "single-r2-1",
+    "group": "single_step_waveform",
+    "verified": true,
+    "wall_seconds": 58.021371400000135,
+    "accepted_windows": 960
+  },
+  {
+    "name": "single-r5-1",
+    "group": "single_step_waveform",
+    "verified": true,
+    "wall_seconds": 38.8170140000002,
+    "accepted_windows": 960
+  },
+  {
+    "name": "single-r5-2",
+    "group": "single_step_waveform",
+    "verified": true,
+    "wall_seconds": 57.202879100000246,
+    "accepted_windows": 960
+  },
+  {
+    "name": "single-r2-2",
+    "group": "single_step_waveform",
+    "verified": true,
+    "wall_seconds": 63.96251960000063,
+    "accepted_windows": 960
+  },
+  {
+    "name": "single-r2-3",
+    "group": "single_step_waveform",
+    "verified": true,
+    "wall_seconds": 83.28952149999986,
+    "accepted_windows": 960
+  },
+  {
+    "name": "single-r5-3",
+    "group": "single_step_waveform",
+    "verified": true,
+    "wall_seconds": 67.52998930000012,
+    "accepted_windows": 960
+  },
+  {
+    "name": "long-cycles",
+    "group": "long_run",
+    "verified": true,
+    "wall_seconds": 237.75197880000087,
+    "accepted_windows": 2000
+  },
+  {
+    "name": "advection-combined",
+    "group": "combined_refinement",
+    "verified": true,
+    "wall_seconds": 175.85898009999983,
+    "accepted_windows": 24
+  },
+  {
+    "name": "kill-pipe",
+    "group": "fault_injection",
+    "verified": true,
+    "error": "Coupled case failed (1); see C:\\Users\\28147\\Desktop\\\u4e0a\u6d77\u5f00\u6e90\u5e94\u7528\u8d5b\\CFD\u65b9\u5411\\results\\hardening-20261013\\kill-pipe\\container.log",
+    "cleanup_seconds": 0.10084523899990927,
+    "accepted_prefix_windows": 20,
+    "expected_failure": true
+  },
+  {
+    "name": "kill-foam",
+    "group": "fault_injection",
+    "verified": true,
+    "error": "Coupled case failed (1); see C:\\Users\\28147\\Desktop\\\u4e0a\u6d77\u5f00\u6e90\u5e94\u7528\u8d5b\\CFD\u65b9\u5411\\results\\hardening-20261013\\kill-foam\\container.log",
+    "cleanup_seconds": 0.10882396400006655,
+    "accepted_prefix_windows": 20,
+    "expected_failure": true
+  },
+  {
+    "name": "recovery",
+    "group": "clean_rerun",
+    "verified": true,
+    "wall_seconds": 81.7100277999998,
+    "accepted_windows": 960
+  }
+]

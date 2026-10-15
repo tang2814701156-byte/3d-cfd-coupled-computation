@@ -1,0 +1,4 @@
+FROM cfd-coupling:0.1
+COPY containers/solver /opt/cfd/solver
+COPY containers/build_solver.py /opt/cfd/build_solver.py
+RUN source /usr/lib/openfoam/openfoam2512/etc/bashrc && python /opt/cfd/build_solver.py
